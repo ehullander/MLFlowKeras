@@ -9,7 +9,7 @@ remote_server_uri = "mlruns" # set to your server URI
 
 or 
 
-remote_server_uri = "http://<server_p>:5000"
+remote_server_uri = "http://<server_ip>:5000"
 mlflow.set_tracking_uri(remote_server_uri)  
 
 
