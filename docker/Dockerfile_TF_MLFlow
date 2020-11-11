@@ -1,0 +1,12 @@
+# # UserWarning: Could not log to MLflow. Only TensorFlow versions1.12 <= v < 2.0.0 are supported.
+# FROM tensorflow/tensorflow:2.0.0-gpu-py3-jupyter
+FROM tensorflow/tensorflow:1.15.4-gpu-py3-jupyter
+RUN pip install --upgrade pip
+RUN pip install mlflow==1.2.0
+RUN pip install hyperopt
+RUN pip install pandas
+RUN pip install matplotlib
+RUN apt install git -y
+CMD /bin/bash
+
+
