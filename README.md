@@ -17,7 +17,7 @@ mlflow.set_tracking_uri(remote_server_uri)
 docker build -t mlflow -f docker/Dockerfile_MLFlow .
 docker run --rm -p 5000:5000 -v $(pwd)/mlruns:/mlruns mlflow mlflow server --backend-store-uri ./mlruns --host 0.0.0.0 --port 5000
 ```
-# UserWarning: Could not log to MLflow. Only TensorFlow versions1.12 <= v < 2.0.0 are supported.
+UserWarning: Could not log to MLflow. Only TensorFlow versions1.12 <= v < 2.0.0 are supported.  
 
 ```
 docker build -t tfmlflow -f docker/Dockerfile_TF_MLFlow .
